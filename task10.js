@@ -1,8 +1,11 @@
 let N = 5;
 let sum = 0;
 
-for (let i = 1; i <= N; i++) {
-    sum += i * i;
-}
+function sqr(a, b) {
+    for (let i = 1; i <= a; i++) {
+        b += i * i;
+    }
 
-console.log("Сумма квадратов чисел от 1 до " + N + " равна " + sum);
+    console.log("Сумма квадратов чисел от 1 до " + a + " равна " + b);
+}
+sqr(N, sum);

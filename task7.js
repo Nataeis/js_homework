@@ -1,9 +1,13 @@
 let N = 12345;
 let reversed = 0;
 
-while (N > 0) {
-  reversed = reversed * 10 + N % 10;
-  N = (N / 10) | 0;
+function reverse(a, b) {
+    while (a > 0) {
+        b = b * 10 + a % 10;
+        a = (a / 10) | 0;
+    }
+
+    console.log(b);
 }
 
-console.log(reversed);
+reverse(N, reversed);

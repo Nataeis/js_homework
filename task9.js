@@ -1,6 +1,9 @@
 let N = 12321;
 
-let str = N.toString();
-let isPalindrome = str === str.split('').reverse().join('');
+function isPalindrome(num) {
+    let str = num.toString();
+    let isPalindrome = str === str.split('').reverse().join('');
 
-console.log("Число " + N + (isPalindrome ? " является палиндромом." : " не является палиндромом."));
+    console.log("Число " + N + (isPalindrome ? " является палиндромом." : " не является палиндромом."));
+}
+isPalindrome(N);
