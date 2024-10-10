@@ -1,10 +1,11 @@
-let N = 12345; 
+let n = 125;
 let sum = 0;
 
-let digits = N.toString();
-
-for (let i = 0; i < digits.length; i++) {
-  sum += parseInt(digits[i]);
+function amoun(num1, num2) {
+    let digits = num1.toString();
+    for (let i = 0; i < digits.length; i++) {
+        num2 += parseInt(digits[i]);
+    }
+    console.log("Сумма цифр числа " + num1 + " равна " + num2);
 }
-
-console.log("Сумма цифр числа " + N + " равна " + sum);
+amoun(n, sum);

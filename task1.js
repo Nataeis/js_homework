@@ -1,8 +1,9 @@
-let N = 10;
-
-let sum = 0;
-for (let i = 1; i <= N; i++) {
-  sum += i;
+let i = 1;
+let n = 10;
+function amoun(sum1, sum2) {
+  while (sum1 <= sum2) {
+    console.log(sum1);
+    sum1++;
+  }
 }
-
-console.log("Сумма чисел от 1 до " + N + " равна " + sum);
+amoun(i, n);
